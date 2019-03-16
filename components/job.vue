@@ -20,16 +20,13 @@
 .job-wrapper {
   /* display: flex; */
 }
-
 .title {
   display: flex;
   align-items: center;
 }
-
 .title h3 {
   margin-right: 10px;
 }
-
 hr {
   flex: 1;
   border: 1px solid blue;
