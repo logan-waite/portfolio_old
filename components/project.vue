@@ -1,0 +1,93 @@
+<template>
+  <div class="col-4 project-wrapper">
+    <header>
+      <h5 class="title">{{ title }}</h5>
+      <div class="img-wrapper">
+        <img :src="require(`~/assets/images/${img}`)" />
+      </div>
+    </header>
+    <section>
+      <span class="langs">
+        <span v-for="(lang, index) in langs" :key="index">{{ lang }}</span>
+      </span>
+      <a
+        :href="`https://www.github.com/lwaite2010/${github}`"
+        class="github-link"
+      >
+        Github
+      </a>
+      <p class="description">
+        {{ description }}
+      </p>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    img: {
+      type: String,
+      required: true
+    },
+    langs: {
+      type: Array,
+      required: true
+    },
+    github: {
+      type: [String],
+      default: ''
+    },
+    description: {
+      type: String,
+      required: true
+    }
+  },
+  data() {
+    return {
+      test: '~/assets/images/accomplisher.png'
+    }
+  }
+}
+</script>
+
+<style scoped>
+.project-wrapper {
+  /* border: 1px solid #aaa; */
+  border-radius: 2px;
+  padding: 0px;
+  box-shadow: 2px 2px 10px 0px #aaa;
+  margin: 10px;
+}
+
+.title {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  /* font-weight: bold; */
+  font-size: 30px;
+  margin: 10px;
+  text-shadow: 2px 2px #555;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 100%;
+  filter: blur(2px) brightness(75%);
+}
+
+section {
+  padding: 10px;
+}
+</style>
