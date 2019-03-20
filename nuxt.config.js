@@ -32,7 +32,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/globals.js' }],
+  plugins: ['~/plugins/fontawesome.js', '~/plugins/vue-scrollactive.js'],
 
   /*
    ** Nuxt.js modules

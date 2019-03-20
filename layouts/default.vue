@@ -17,6 +17,6 @@ export default {
 <style>
 #main {
   display: flex;
-  height: 100%;
+  /* height: 100%; */
 }
 </style>

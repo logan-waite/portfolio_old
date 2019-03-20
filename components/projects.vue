@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section id="projects">
     <h1>Projects</h1>
     <div class="projects">
       <project
@@ -12,7 +12,7 @@
         :description="project.description"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

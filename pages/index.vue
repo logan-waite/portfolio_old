@@ -1,5 +1,5 @@
 <template>
-  <main class="col-md-9">
+  <main class="col-md-9 offset-md-3">
     <div>
       <overview />
       <projects />
@@ -25,9 +25,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 main {
   height: 100%;
   overflow-y: auto;
+}
+section {
+  height: 100vh;
 }
 </style>
