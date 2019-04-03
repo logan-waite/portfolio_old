@@ -37,6 +37,31 @@ export default {
           langs: ['Laravel', 'Vue.js'],
           github: 'bookhero',
           description: 'a description of Book Hero'
+        },
+        {
+          title: 'Catalog',
+          img: 'catalog.png',
+          langs: ['Vue.js'],
+          description: 'a description of Catalog'
+        },
+        {
+          title: 'iTOVi Dashboard',
+          img: 'itovi-dashboard.png',
+          langs: ['AngularJS'],
+          description: 'a description of iTOVi dashboard'
+        },
+        {
+          title: 'iTOVi Checkout',
+          img: 'itovi-checkout.png',
+          langs: ['Vue.js'],
+          description: 'a description of iTOVi Checkout'
+        },
+        {
+          title: 'Exercism',
+          img: 'exercism.png',
+          langs: ['Various'],
+          github: 'exercism',
+          description: 'a description of Exercism'
         }
       ]
     }
@@ -48,5 +73,6 @@ export default {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 </style>

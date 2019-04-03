@@ -60,6 +60,10 @@ li {
   font-size: 20px;
 }
 
+li a {
+  color: black;
+}
+
 li a.active {
   font-weight: bold;
 }

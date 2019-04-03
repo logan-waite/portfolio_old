@@ -1,5 +1,5 @@
 <template>
-  <div class="col-4 project-wrapper">
+  <div class="project-wrapper">
     <header>
       <h5 class="title">{{ title }}</h5>
       <div class="img-wrapper">
@@ -11,6 +11,7 @@
         <span v-for="(lang, index) in langs" :key="index">{{ lang }}</span>
       </span>
       <a
+        v-if="github !== ''"
         :href="`https://www.github.com/lwaite2010/${github}`"
         class="github-link"
       >
@@ -62,6 +63,7 @@ export default {
   padding: 0px;
   box-shadow: 2px 2px 10px 0px #aaa;
   margin: 10px;
+  flex: 0 0 47%;
 }
 
 .title {
@@ -78,12 +80,10 @@ export default {
   width: 100%;
   height: 90px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
 }
 
 img {
-  height: 100%;
+  width: 100%;
   filter: blur(2px) brightness(75%);
 }
 
