@@ -31,6 +31,6 @@ main {
   overflow-y: auto;
 }
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 </style>

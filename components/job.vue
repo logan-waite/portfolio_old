@@ -37,9 +37,6 @@ export default {
 </script>
 
 <style scoped>
-.job-wrapper {
-  /* display: flex; */
-}
 .detail {
   display: flex;
 }
