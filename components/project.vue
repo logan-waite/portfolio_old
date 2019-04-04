@@ -3,19 +3,31 @@
     <header>
       <h5 class="title">{{ title }}</h5>
       <div class="img-wrapper">
-        <img :src="require(`~/assets/images/${img}`)" />
+        <img
+          :src="require(`~/assets/images/${img}`)"
+          :alt="title + ' screenshot'"
+        />
       </div>
     </header>
     <section>
       <span class="langs">
-        <span v-for="(lang, index) in langs" :key="index">{{ lang }}</span>
+        <span
+          v-for="(lang, index) in langs"
+          :key="index"
+          class="badge"
+          :class="`badge-${lang.toLowerCase() || 'primary'}`"
+          >{{ lang }}</span
+        >
       </span>
       <a
         v-if="github !== ''"
         :href="`https://www.github.com/lwaite2010/${github}`"
         class="github-link"
       >
-        Github
+        <font-awesome-icon
+          :icon="['fab', 'github-square']"
+          size="2x"
+        ></font-awesome-icon>
       </a>
       <p class="description">
         {{ description }}
@@ -89,5 +101,35 @@ img {
 
 section {
   padding: 10px;
+}
+
+.github-link {
+  float: right;
+}
+
+.badge {
+  color: white;
+  margin-right: 2px;
+}
+
+.badge-react {
+  background-color: #61dafb;
+}
+
+.badge-vue {
+  background-color: #41b883;
+}
+
+.badge-angular {
+  background-color: #c3082e;
+}
+
+.badge-laravel {
+  background-color: #f94f3b;
+}
+
+.badge-various {
+  background-color: greenyellow;
+  color: black;
 }
 </style>

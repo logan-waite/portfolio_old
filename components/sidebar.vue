@@ -98,7 +98,8 @@ li a.active {
 }
 
 .contact {
-  position: relative;
+  position: absolute;
   bottom: 0px;
+  margin-bottom: 25px;
 }
 </style>

@@ -27,33 +27,33 @@ export default {
         {
           title: 'Accomplisher',
           img: 'accomplisher.png',
-          langs: ['React.js'],
+          langs: ['React'],
           github: 'accomplisher-web',
           description: 'a description of the accomplisher app'
         },
         {
           title: 'Book Hero',
           img: 'book-hero.png',
-          langs: ['Laravel', 'Vue.js'],
+          langs: ['Laravel', 'Vue'],
           github: 'bookhero',
           description: 'a description of Book Hero'
         },
         {
           title: 'Catalog',
           img: 'catalog.png',
-          langs: ['Vue.js'],
+          langs: ['Vue'],
           description: 'a description of Catalog'
         },
         {
           title: 'iTOVi Dashboard',
           img: 'itovi-dashboard.png',
-          langs: ['AngularJS'],
+          langs: ['Angular'],
           description: 'a description of iTOVi dashboard'
         },
         {
           title: 'iTOVi Checkout',
           img: 'itovi-checkout.png',
-          langs: ['Vue.js'],
+          langs: ['Vue'],
           description: 'a description of iTOVi Checkout'
         },
         {
