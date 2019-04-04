@@ -9,7 +9,7 @@
           class="progress-bar"
           role="progressbar"
           :style="{
-            backgroundColor: section.color || randomColor(),
+            backgroundColor: section.color || usedColors[index],
             flex: `${section.amount}`
           }"
         >
@@ -61,9 +61,23 @@ export default {
       required: true
     }
   },
+  data() {
+    return {
+      usedColors: []
+    }
+  },
+  /* eslint-disable no-console */
+  created() {
+    for (let i = 0; i < this.sections.length; i++) {
+      const color = this.randomColor()
+      if (this.usedColors.includes(color))
+        this.usedColors.push(this.randomColor())
+      else this.usedColors.push(color)
+    }
+  },
   methods: {
     randomColor() {
-      return COLORS[Math.floor(Math.random() * COLORS.length) + 1]
+      return COLORS[Math.floor(Math.random() * (COLORS.length - 1)) + 1]
     }
   }
 }

@@ -31,5 +31,6 @@ main {
 }
 section {
   min-height: 100vh;
+  padding-bottom: 50px;
 }
 </style>

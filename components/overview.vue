@@ -25,7 +25,8 @@ export default {
   },
   data() {
     return {
-      summary: 'this is a summary',
+      summary:
+        "I'm a software developer with a passion for making products that are enjoyable to use and make the world a better place. I've experimented with multiple types of technology, but I also do my best to learn about the world around me to try and find new ways to solve old problems. Some of my hobbies include games (video, board, card, you name it), woodworking, and travel.",
       skills: [
         {
           id: 1,
@@ -149,6 +150,10 @@ export default {
 </script>
 
 <style>
+#overview > h1 {
+  margin-top: 1rem;
+}
+
 #skills {
   display: flex;
   justify-content: center;

@@ -108,6 +108,10 @@ section {
   float: right;
 }
 
+.description {
+  margin-top: 0.25rem;
+}
+
 .badge {
   color: white;
   margin-right: 2px;
