@@ -23,6 +23,7 @@
         v-if="github !== ''"
         :href="`https://www.github.com/lwaite2010/${github}`"
         class="github-link"
+        :aria-label="`Link to github project for ${title}`"
       >
         <font-awesome-icon
           :icon="['fab', 'github-square']"

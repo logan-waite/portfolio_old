@@ -12,9 +12,6 @@
             backgroundColor: section.color || randomColor(),
             flex: `${section.amount}`
           }"
-          :aria-valuenow="`${section.width}`"
-          aria-valuemin="0"
-          aria-valuemax="100"
         >
           {{ section.label }}
         </div>

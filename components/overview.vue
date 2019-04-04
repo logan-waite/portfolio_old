@@ -34,11 +34,11 @@ export default {
           width: 100,
           sections: [
             {
-              amount: 3,
+              amount: 4,
               label: 'Vue'
             },
             {
-              amount: 1,
+              amount: 2,
               label: 'React'
             },
             {

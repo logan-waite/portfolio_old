@@ -7,6 +7,9 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: 'en-us'
+    },
     title: 'Logan Waite',
     meta: [
       { charset: 'utf-8' },
