@@ -37,7 +37,6 @@ const COLORS = [
   'olive',
   'darkturquoise',
   'teal',
-  'deepskyblue',
   'blue',
   'magenta',
   'slategrey',
@@ -84,5 +83,9 @@ export default {
 }
 .progress-bar-wrapper {
   display: flex;
+}
+.progress-bar:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 </style>

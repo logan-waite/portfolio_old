@@ -34,7 +34,7 @@ export default {
           width: 100,
           sections: [
             {
-              amount: 2,
+              amount: 3,
               label: 'Vue'
             },
             {

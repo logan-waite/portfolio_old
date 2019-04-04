@@ -4,7 +4,6 @@
       <overview />
       <projects />
       <work-history />
-      <contact />
     </div>
   </main>
 </template>
@@ -13,14 +12,14 @@
 import Overview from '~/components/overview'
 import Projects from '~/components/projects'
 import WorkHistory from '~/components/work-history'
-import Contact from '~/components/contact'
+// import Contact from '~/components/contact'
 
 export default {
   components: {
     Overview,
     Projects,
-    WorkHistory,
-    Contact
+    WorkHistory
+    // Contact
   }
 }
 </script>
