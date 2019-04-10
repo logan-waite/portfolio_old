@@ -21,6 +21,27 @@ export default {
     return {
       jobs: [
         {
+          title: 'Front End Developer',
+          places: [
+            {
+              place: 'iTOVi',
+              startYear: '2017',
+              endYear: '2019',
+              bullets: [
+                'Redesigned and built iTOVi’s checkout page to create a smoother experience for customers.',
+                'Rebuilt iTOVi’s user dashboard to be more stable and to better reflect the the branding of the company.'
+              ]
+            },
+            {
+              place: 'Catalog',
+              startYear: '2018',
+              bullets: [
+                'Architected and built the client-facing app for Catalog, using the Vue framework.'
+              ]
+            }
+          ]
+        },
+        {
           title: 'Full Stack Developer',
           places: [
             {
@@ -29,10 +50,7 @@ export default {
               endYear: '2019',
               bullets: [
                 'Placed in charge of iTOVi’s release process for their software products.',
-                'Worked on transitioning the flagship app for iTOVi to the Flutter framework.',
-                'Architected and built the client-facing app for Catalog, using the Vue framework.',
-                'Redesigned and built iTOVi’s checkout page to create a smoother experience for customers.',
-                'Rebuilt iTOVi’s user dashboard to be more stable and to better reflect the the branding of the company.'
+                'Worked on transitioning the flagship app for iTOVi to the Flutter framework.'
               ]
             },
             {
