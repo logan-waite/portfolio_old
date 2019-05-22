@@ -2,7 +2,7 @@
   <section id="overview">
     <h1>Overview</h1>
     <p id="summary">{{ summary }}</p>
-    <section id="skills">
+    <!-- <section id="skills">
       <skill
         v-for="skill in skills"
         :key="skill.key"
@@ -12,16 +12,16 @@
         :sections="skill.sections"
         :width="skill.width"
       ></skill>
-    </section>
+    </section> -->
   </section>
 </template>
 
 <script>
-import Skill from '~/components/skill'
+// import Skill from '~/components/skill'
 
 export default {
   components: {
-    Skill
+    // Skill
   },
   data() {
     return {

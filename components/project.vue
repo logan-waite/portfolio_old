@@ -117,7 +117,8 @@ section {
   margin-right: 2px;
 }
 
-.badge-react {
+.badge-react,
+.badge-react-native {
   background-color: #61dafb;
 }
 
@@ -133,8 +134,19 @@ section {
   background-color: #f94f3b;
 }
 
+.badge-django {
+  background-color: #092e20;
+}
+
 .badge-various {
   background-color: greenyellow;
   color: black;
+}
+
+@media screen and (max-width: 725px) {
+  .project-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 </style>

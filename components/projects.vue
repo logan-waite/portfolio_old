@@ -25,6 +25,20 @@ export default {
     return {
       projects: [
         {
+          title: 'Book Hero',
+          img: 'book-hero.png',
+          langs: ['Vue', 'Django'],
+          description:
+            "Book Hero is an opportunity for me to apply what I've been learning about gamification. I wanted to give people quick feedback about how what they were reading was making them better people, and this was the idea I came up with."
+        },
+        {
+          title: 'Accomplisher Mobile',
+          img: 'accomplisher-mobile.png',
+          langs: ['React Native'],
+          description:
+            'Moving the Accomplisher idea to mobile using React Native. I built the inital app in one week as a deep dive into React Native.'
+        },
+        {
           title: 'Accomplisher',
           img: 'accomplisher.png',
           langs: ['React'],
@@ -33,12 +47,12 @@ export default {
             'The Accomplisher app is an attempt at making goal setting more rewarding by making the accomplished goals a major part of the experience. I also wanted to introduce some gaming elements to make setting and accomplishing goals more fun.'
         },
         {
-          title: 'Book Hero',
-          img: 'book-hero.png',
+          title: 'Book Hero Prototype',
+          img: 'book-hero-prototype.png',
           langs: ['Laravel', 'Vue'],
           github: 'bookhero',
           description:
-            "Book Hero is an opportunity for me to apply what I've been learning about gamification. I wanted to give people quick feedback about how what they were reading was making them better people, and this was the idea I came up with."
+            'This is a prototype for Book Hero, when I was learning Laravel and Vue. I was able to test with a small audience and learned how to improve the user experience.'
         },
         {
           title: 'Catalog',
@@ -80,5 +94,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0px 10px;
 }
 </style>

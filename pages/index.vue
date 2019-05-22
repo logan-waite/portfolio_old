@@ -1,5 +1,5 @@
 <template>
-  <main class="col-md-9 offset-md-3">
+  <main>
     <div>
       <overview />
       <projects />
@@ -30,7 +30,10 @@ main {
   overflow-y: auto;
 }
 section {
-  min-height: 100vh;
-  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+section:last-child {
+  margin-bottom: 30px;
 }
 </style>

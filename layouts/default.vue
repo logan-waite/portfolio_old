@@ -1,15 +1,16 @@
 <template>
-  <div id="main">
-    <sidebar></sidebar>
+  <div id="main" class="col-12">
+    <!-- <sidebar></sidebar> -->
+    <navbar></navbar>
     <nuxt></nuxt>
   </div>
 </template>
 
 <script>
-import Sidebar from '~/components/sidebar'
+import Navbar from '~/components/navbar'
 export default {
   components: {
-    Sidebar
+    Navbar
   }
 }
 </script>

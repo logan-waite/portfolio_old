@@ -7,7 +7,8 @@ import {
   faDraftingCompass,
   faRocket,
   faBookUser,
-  faEnvelope
+  faEnvelope,
+  faBars
 } from '@fortawesome/pro-regular-svg-icons'
 import {
   faLinkedin,
@@ -28,7 +29,8 @@ library.add(
   faLinkedin,
   faFacebookSquare,
   faTwitterSquare,
-  faGithubSquare
+  faGithubSquare,
+  faBars
 )
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
